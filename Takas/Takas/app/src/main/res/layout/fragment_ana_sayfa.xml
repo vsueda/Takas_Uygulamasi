@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#487f78"
+    tools:context=".AnaSayfa">
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/arama_FAB"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:clickable="true"
+       android:backgroundTint="#d8ebff"
+       android:src="@drawable/ara"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.954"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.986" />
+
+   <Spinner
+       android:id="@+id/arama_il_spinner"
+       android:layout_width="106dp"
+       android:layout_height="35dp"
+       android:translationX="100dp"
+       android:translationY="10dp"
+       android:visibility="invisible"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.101"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0" />
+
+   <Spinner
+       android:id="@+id/arama_kategori_spinner"
+       android:layout_width="106dp"
+       android:layout_height="35dp"
+       android:translationX="100dp"
+       android:translationY="50dp"
+       android:visibility="invisible"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.101"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0" />
+
+   <TextView
+       android:id="@+id/arama_il_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="#487f78"
+       android:text="İl:"
+       android:textColor="#ffffff"
+       android:textSize="20sp"
+       android:translationX="15dp"
+       android:translationY="15dp"
+       android:visibility="invisible"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.04"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0" />
+   <TextView
+       android:id="@+id/arama_kategori_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="#487f78"
+       android:text="Kategori"
+       android:textColor="#ffffff"
+       android:textSize="20sp"
+       android:translationX="15dp"
+       android:translationY="55dp"
+       android:visibility="invisible"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.047"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0" />
+   <Button
+       android:id="@+id/arama_button"
+       android:layout_width="68dp"
+       android:layout_height="wrap_content"
+       android:text="Ara"
+       android:textColor="#487f78"
+       android:translationY="25dp"
+       android:visibility="invisible"
+       app:backgroundTint="#d8ebff"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.836"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0" />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/AnaSayfa"
+       android:layout_width="412dp"
+       android:layout_height="496dp"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentBottom="true"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.333"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/arama_kategori_spinner"
+       app:layout_constraintVertical_bias="1.0">
+
+   </androidx.recyclerview.widget.RecyclerView>
+
+   <TextView
+       android:id="@+id/takasText"
+       android:layout_width="410dp"
+       android:layout_height="111dp"
+       android:text="◯●TAKAS●◯"
+       android:textColor="#d8ebff"
+       android:typeface="serif"
+       android:textSize="60sp"
+       android:textAlignment="center"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.836"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0"
+       tools:layout_editor_absoluteX="0dp"
+       tools:layout_editor_absoluteY="101dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
